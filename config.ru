@@ -1,3 +1,5 @@
+require 'middleman-gh-pages'
+
 require 'middleman-core/load_paths'
 ::Middleman.setup_load_paths
 
