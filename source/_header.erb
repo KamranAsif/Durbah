@@ -5,8 +5,13 @@
   <div class="nav-container">
     <ul class="nav nav-pills">
 
-      <li role="presentation" class="active"><a href="#">Home</a></li>
-      <li role="presentation" class="disabled"><a href="#">Volunteers</a></li>
+      <li role="presentation" class="
+        <% if current_page.path === 'index.html'  %> active <% end %>
+      "><a href="index.html">Home</a></li>
+
+      <li role="presentation" class="
+        <% if current_page.path === 'volunteer.html'  %> active <% end %>
+      "><a href="volunteer.html">Volunteers</a></li>
       <li role="presentation" class="disabled"><a href="#">Community</a></li>
       <li role="presentation" class="disabled"><a href="#">Knowledge</a></li>
       <li role="presentation" class="disabled"><a href="#">Bursary</a></li>

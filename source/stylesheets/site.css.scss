@@ -27,6 +27,7 @@ body {
 .background-right {
   background: url('../images/background-right.png');
   right: 0px;
+  top: 100px;
 }
 
 .header {
@@ -122,4 +123,9 @@ body {
   .info {
     color: #fff;
   }
+}
+
+.google-form {
+  min-height: 500px;
+  width: 100%;
 }
