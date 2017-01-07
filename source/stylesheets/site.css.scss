@@ -38,10 +38,39 @@ body {
     display: inline-block;
   }
 
+  .nav>li>a:focus,
+  .nav>li>a:hover,
+  .nav-pills>li.active>a,
+  .nav-pills>li.active>a:focus,
+  .nav-pills>li.active>a:hover,
+  .nav a.dropdown-item.active,
+  .nav a.dropdown-item.active:focus,
+  .nav a.dropdown-item.active:hover {
+    background: $red;
+  }
+
   .nav-container {
     float: right;
     display: inline-block;
     padding-top: 40px;
+  }
+
+  .nav .open>a,
+  .open>.dropdown-menu {
+    background-color: #444444;
+  }
+
+  .open>.dropdown-menu {
+    padding: 0px;
+  }
+
+  .header a:focus, .header a:hover, .header {
+    display: block;
+  }
+
+  .dropdown .dropdown-menu .dropdown-item {
+    display: block;
+    padding: 5px;
   }
 
   .nav>li>a {
@@ -52,12 +81,8 @@ body {
     color: #fff;
   }
 
-  .nav>li>a:focus, .nav>li>a:hover,
-  .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-    background: $red;
-  }
-
-  .nav-pills>li.disabled>a:focus, .nav-pills>li.disabled>a:hover {
+  .nav-pills>li.disabled>a:focus,
+  .nav-pills>li.disabled>a:hover {
     background: #fff;
   }
 }

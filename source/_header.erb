@@ -11,8 +11,22 @@
 
       <li role="presentation" class="
         <% if current_page.path === 'volunteer.html'  %> active <% end %>
-      "><a href="volunteer.html">Volunteers</a></li>
-      <li role="presentation" class="disabled"><a href="#">Community</a></li>
+        "><a href="volunteer.html">Volunteer</a></li>
+
+      <li class="dropdown
+        <% if current_page.path === 'scholarships.html'  %> active <% end %>
+        <% if current_page.path === 'traveler.html'  %> active <% end %>
+        ">
+        <a class="nav-link dropdown-toggle" id="supportedContentDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Community</a>
+        <div class="dropdown-menu" aria-labelledby="supportedContentDropdown">
+          <a class="dropdown-item
+            <% if current_page.path === 'scholarships.html'  %> active <% end %>
+            " href="scholarships.html">Scholarships</a>
+          <a class="dropdown-item
+            <% if current_page.path === 'traveler.html'  %> active <% end %>
+            " href="traveler.html">Traveler Care</a>
+        </div>
+      </li>
       <li role="presentation" class="disabled"><a href="#">Knowledge</a></li>
       <li role="presentation" class="disabled"><a href="#">Bursary</a></li>
       <li role="presentation" class="disabled"><a href="#">Contact</a></li>
